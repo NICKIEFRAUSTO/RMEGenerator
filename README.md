@@ -1,2 +1,1 @@
-# RMEGenerator
-ReadMeGenerator App
+# Title: README generator
