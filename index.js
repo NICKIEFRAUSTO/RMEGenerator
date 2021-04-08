@@ -16,10 +16,25 @@ init();
 // TODO: Create a function to write README file
 function writeToFile(data) {
 let fileName="README.md"
+let licenseBadge= renderLicenseBadge(data.license)  
 let fileString=`# Title: ${data.title}
-
+##Table of Contents:${data.TableOfContents}
+-Description
+-Installation
+-Usage
+-License
+-Contributing
+-Tests
+-Questions
+##Description:${data.description}
+##Installation:${data.installation}
+##Usage:${data.usage}
+##License:${data.license}
+##Contributing:${data.contributing}
+##Tests:${data.tests}
+##Questions:${data.questions}
 `
-    
+
     fs.writeFile(fileName, fileString, (err) =>
       err ? console.log(err) : console.log("Success!")
     );
