@@ -21,17 +21,17 @@ function writeToFile(data) {
 
 ## Table of Contents
 
-*[Installation](#installation)
+* [Installation](#installation)
 
-*[Usage](#usage)
+* [Usage](#usage)
 
-*[License](#license)
+* [License](#license)
 
-*[Contributing](#contributing)
+* [Contributing](#contributing)
 
-*[Tests](#contributing)
+* [Tests](#contributing)
 
-*[Questions](#questions)
+* [Questions](#questions)
 
 #### Description
 ${data.description}
