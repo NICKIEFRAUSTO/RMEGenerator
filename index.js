@@ -20,12 +20,19 @@ function writeToFile(data) {
     let fileString=`# ${data.title}
 
 ## Table of Contents
-*-[Installation](#installation)
-*-[Usage](#usage)
+
+*[Installation](#installation)
+
+*[Usage](#usage)
+
 *[License](#license)
--[Contributing](#contributing)
--[Tests](#contributing)
--[Questions](#questions)
+
+*[Contributing](#contributing)
+
+*[Tests](#contributing)
+
+*[Questions](#questions)
+
 #### Description
 ${data.description}
 #### Installation

@@ -54,4 +54,4 @@ return licenseBadge;
 // `;
 // }
 
-module.exports = generateMarkdown;
+// module.exports = generateMarkdown;
