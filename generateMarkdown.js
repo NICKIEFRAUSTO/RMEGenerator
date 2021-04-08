@@ -6,6 +6,7 @@ function renderLicenseSection(license) {
 let licenseBadge="";
 switch (license) 
   {
+      case 'MIT':
     licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)";
       break;
       case 'APACHE_2.0':
@@ -30,11 +31,27 @@ return licenseBadge;
 
 
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-  
-`;
-}
+// // TODO: Create a function to generate markdown for README
+// function generateMarkdown(data) 
+// {
+//   return 
+//   `# ${data.title}
+// ##Table of Contents:${data.TableOfContents}
+// -Description
+// -Installation
+// -Usage
+// -License
+// -Contributing
+// -Tests
+// -Questions
+// #Description:${data.description}
+// #Installation:${data.installation}
+// #Usage:${data.usage}
+// #License:${data.license}
+// #Contributing:${data.contributing}
+// #Tests:${data.tests}
+// #Questions:${data.questions}
+// `;
+// }
 
-module.exports = {generateMarkdown};
+module.exports = generateMarkdown;
