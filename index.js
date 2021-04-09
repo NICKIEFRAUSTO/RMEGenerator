@@ -11,58 +11,52 @@ const licenseList = ["MIT", "APACHE_2.0", "GPL_3.0", "BSD_3", "None"];
 init();
 
 
-
 // Function Definitions
 // TODO: Create a function to write README file
 function writeToFile(data) {
     let fileName="README.md"
     // let licenseBadge= renderLicenseBadge(data.license)  
     let fileString=`# ${data.title}
-
-## Table of Contents
-
+![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+ 
+# Table of Contents
 * [Installation](#installation)
-
-* [Usage](#usage)
-
-* [License](#license)
-
-* [Contributing](#contributing)
-
-* [Tests](#contributing)
-
-* [Questions](#questions)
-
-#### Description
-${data.description}
-#### Installation
-${data.installation}
-#### Usage
-${data.usage}
-#### License
-${data.license}
-#### Contributing
-${data.contributing}
-#### Tests
-${data.tests}
-#### Questions
-${data.questions}
-`
-
-    fs.writeFile(fileName, fileString, (err) =>
-      err ? console.log(err) : console.log("Success!")
-    );
-  }
-// function renderLicenseBadge(license) {
-//     if (license===) {
-        
-//     }
     
-// }
+* [Usage](#usage)
+    
+* [License](#license)
+    
+* [Contributing](#contributing)
+    
+* [Tests](#contributing)
+    
+* [Questions](#questions)
+    
+# Description
+  ${data.description}
+# Installation
+  ${data.installation}
+# Usage
+  ${data.usage}
+# License
+  ${data.license}
+# Contributing
+  ${data.contributing}
+# Tests
+  ${data.tests}
+# Questions
+  ${data.questions}
+`
+    
+    fs.writeFile(fileName, fileString, (err) =>
+    err ? console.log(err) : console.log("Success!")
+    );
+}
+
 
 function promptQuestions()
 {
-   return inquirer.prompt([
+    return inquirer.prompt([
         {
             type: "input",
             name: "title",
@@ -104,13 +98,12 @@ function promptQuestions()
             type:"input",
             name:"questions",
             message:"For questions or comments contact me on [GitHub](https://github.com/NICKIEFRAUSTO)"
-        }
-      
+        },
+        
     ])
-
-
- }
-
+    
+    
+}
 
 
 

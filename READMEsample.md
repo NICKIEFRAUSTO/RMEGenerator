@@ -10,8 +10,6 @@
     
 * [Contributing](#contributing)
     
-* [links](#links)
-
 * [Tests](#contributing)
     
 * [Questions](#questions)
@@ -32,12 +30,6 @@
   MIT
 
   <br><br><br>
-# Links
-[sample readme](Images\sampleReadme.jpg)
-<br>
-[screencast](https://drive.google.com/file/d/1BIb1BKra5dDfCnhUiMR6qIE0yGWyRj8i/preview)
-
-<br><br><br>
 # Contributing
   Nicole Frausto
 

@@ -1,2 +1,0 @@
-# RMEGenerator
-ReadMeGenerator App
